@@ -1,0 +1,103 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+      <!-- POKEMON PICTURE ~~~~~~~~~~~~~~~~~~~~~~~~~POKEMON PICTURE~~~~~~~~~~~~~~-->
+<img id="pokemonLogo" src="https://archives.bulbagarden.net/media/upload/4/4b/Pok%C3%A9dex_logo.png">
+<center><img id="charmander" src="https://media.tenor.com/y71BjlqhiKgAAAAj/evolution-fire-pokemon.gif" width="250" height="250">
+</center>
+    <!-- SEARCH BAR  -->
+  <div class="input-group mb-3">
+    <input type="text" id="userInput" class="form-control" placeholder="Search for a pokemon by name or National Pokedex number " aria-label="Recipient's username" aria-describedby="button-addon2">
+    <button class="btn btn-primary" type="button" id="searchButton">search</button>
+  </div>
+  <div class="input-group mb-3">
+    <input type="text" id="userInput2" class="form-control" placeholder="Search for a pokemon by name or National Pokedex number " aria-label="Recipient's username" aria-describedby="button-addon2">
+    <button class="btn btn-primary" type="button" id="searchButton2">search</button>
+  </div>
+  <!-- CHARACTER CARD ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~CHARACTER CARD~~~~~~~~~~-->
+<left>
+<div class="card" style="width: 18rem;">
+  <div class="btn-group" role="group" aria-label="Basic example">
+    <button id="leftArrowButton" type="button" class="btn btn-danger">< moves</button>
+    <button id="rightArrowButton" type="button" class="btn btn-danger">compare ></button>
+  </div>
+  <img id="characterImg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 id="cardTitle" class="card-title"></h5>
+    <p id="characterInfo" class="card-text"></p>
+  </div>
+</div>
+ <!-- CHARACTERS CARDS COMPARE!!!~~~~~~~ CHARACTERS CARDS COMPARE!!!~~~~~~~-->
+ <div id="cardGroup" class="card-group">
+  <div class="card">
+    <img id="cardGroupImg" class="card-img-top">
+    <div class="card-body">
+      <h5 id="cardGroupName1" class="card-title"></h5>
+      <p id="cardGroupInfo1" class="characterInfo"></p>
+    </div>
+  </div>
+  <div class="card" type="image">
+    <img id="versusImg" src="https://i.pinimg.com/736x/1f/82/42/1f8242bf75096f25717a83ab5693a95c.jpg" >
+  </div>
+  <div class="card">
+    <img id="cardGroupImg2" class="card-img-top" src="..." alt="Card image cap">
+    <div class="card-body">
+      <h5 id="cardGroupName2" class="card-title"></h5>
+      <p id="cardGroupInfo2" class="characterInfo"></p>
+    </div>
+  </div> 
+</div>
+</left>
+    <!-- CHARACTER MOVES CARD  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~CHARACTER MOVES CARD ~~~~~-->
+<div id="card2" class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img id="characterImg2" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title"></h5>
+        <button id="backArrowButton" type="button" class="btn btn-danger"> Back > </button>
+        <p class="card-text">Moves:</p>
+        <p id="characterInfo2" class="card-text"><small class="text-muted"></small></p>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- HOME PAGE IMAGES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~HOME PAGE IMAGES~~~~~~~~~~~~~~~~~~` -->
+<div id="mainPageCards">
+  <div class="grid text-center">
+    <div class="g-col-4">
+      <img src="https://media4.giphy.com/media/tM77LKMjQ3MaQAXUA8/200w.webp?cid=ecf05e47njunaazfpth8d67gjmfmkmcg6k138mg2a3a0d09u&rid=200w.webp&ct=g" width="250" height="250">
+      <img src="https://media.tenor.com/qqxPoakYy0oAAAAM/pokemon-evolve.gif" width="250" height="250">
+      <img src="https://media.tenor.com/bCDP3a_19w8AAAAM/pokemon-vulpix.gif" width="250"height="250" >
+      <img src="https://media.tenor.com/AkILqGsdIFoAAAAM/pokemon-ash.gif" width="250"height="250" >
+    </div>
+  </div>
+</div>
+<right>
+   <!-- CHARACTER CARD-3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~CHARACTER CARD-3 ~~~~~~~~~~-->
+   <div class="card3" style="width: 50rem;">
+    <div class="btn-group" role="group" aria-label="Basic example">
+      <button id="leftArrowButton" type="button" class="btn btn-danger">< moves</button>
+    </div>
+    <img id="characterImg3" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 id="cardTitle3" class="card-title"></h5>
+      <p id="characterInfo3" class="card-text"></p>
+    </div>
+  </right
+<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+</body>
+</html>
